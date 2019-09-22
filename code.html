@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Log in</title>
+		<style>
+			body{
+				background-color: rgb(245,245,245);
+			}
+			body > div{
+				display: flex;
+				text-align: center;
+				font-family: sans-serif;
+				border-radius: 25px;
+				overflow: hidden;
+				font-size: 18px;
+				color: black;
+			}
+
+			a{
+				color: black;
+				text-decoration: none;
+			}
+			
+			.box{
+				width: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				padding: 20px;
+			}
+
+			#log_box{
+				background-color: white;
+				padding-bottom: 0px;
+			}
+
+			#reg_box{
+				background-color: DodgerBlue;
+				color: white;
+			}
+
+			.bar{
+				background-color: rgb(245,245,245);
+				width: 100%;
+				font-size: 0.6em;
+				box-sizing: border-box;
+				border: none;
+				padding: 10px;
+			}
+
+			#rem_box{
+				font-size: 0.7em;
+				width: 100%;
+				padding-bottom: 20px;
+			}
+
+			#rem_box input, #rem_box label {
+				margin: 0px;
+				float: left;
+			}
+			#rem_box a{
+				float: right;
+			}
+
+			#log_but{
+				width: 100%;
+				background-color: DodgerBlue;
+				border: none;
+				padding: 10px;
+				color: white;
+				font-weight: bold;
+			}
+
+			#or_social{
+				margin-top: 10px;
+				padding: 10px;
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				font-size: 0.7em;
+			}
+
+			hr{
+				width: 20%;
+				height: 0%;
+			}
+
+			
+			#social_img img{
+				width: 20px;
+				padding: 5px;
+			}
+			
+			#copy{
+				font-size: 0.4em;
+			}
+
+			#add_person{
+				width: 30%;
+				height: 30%;
+			}
+
+			#hello{
+				font-size: 1.8em;
+				margin: 0px;
+				font-weight: bold;
+			}
+
+			#text{
+				font-size: 0.7em;
+			}
+
+			#reg_but{
+				border: 1px solid white;
+				border-radius: 25px;
+				padding:5px 20px;
+				display: flex;
+			}
+
+			#reg_but a{
+				font-size: 0.7em;
+				color: white;
+				font-weight: bold;
+				padding-right: 5px;
+				padding-top: 5px; 
+			}
+
+
+		</style>
+	</head>
+	<body><div>
+		<div class="box" id="log_box">
+			<h1>Log In</h1>
+				<input class="bar" type="text" name="email" placeholder="email"><br>
+				<input class="bar" type="password" name="password" placeholder="password"><br>
+
+				<div id="rem_box">
+					<input type="checkbox" name="remember_me">
+					<label >Remember me</label>
+					<a href="">Forgot password?</a>
+				</div>
+				<input id="log_but" type="submit" value="LOG IN">
+
+			<div id="or_social">
+				<hr>Or Connect with<hr>
+			</div>
+			<div id="social_img">
+				<a href=""><img src="icons/fb.png" alt="fb icon"></a>
+				<a href=""><img src="icons/tw.png" alt="tw icon"></a>
+				<a href=""><img src="icons/gh.png" alt="gh icon"></a>
+				<a href=""><img src="icons/in.png" alt="in icon"></a>
+			</div>
+			<p id="copy">&copy; 2019</p>
+		</div>
+
+		<div class="box" id="reg_box">
+			<img id="add_person" src="icons/add_person.png" alt="add person icon">
+			<p id="hello"> Hello, friend! </p>
+			<p id="text">Enter your personal details and start journey with us</p>
+			
+			<div id="reg_but">
+				<a href="">REGISTER</a>
+				<img src="icons/arrow.png" alt="register icon">
+			</div>
+		</div>
+	</div></body>
+</html>
